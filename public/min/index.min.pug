@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title ChickenGramm
+        link(rel="icon", type="image/png", sizes="16x16", href="./img/favicon-16x16.png")
+        link(rel="stylesheet", type="text/css", href="./index.css")
+        link(href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap", rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap", rel="stylesheet")
+    body
+        include ./components/header.pug
+
+        .content__container.not_display
+
+            aside.column.content_user
+
+               
+
+                .user_column
+                    .user__container
+                        img.user__container_photo(src="./img/noImage.jpg", alt="user photo", width="100px", height="100px")
+                        p.user__status
+                            span.user__container_name
+                            br
+                            span.user__container_status
+                    hr.break_line
+
+                    include ./components/settings-form.pug
+                    
+            main.column.content_feed
+                .feed
+                    .feed__container
+
+                    include ./components/feed-post-form.pug
+                
+                .feed__members
+                    ul.feed__members_list
+                    
+            aside.column.content_advertis
+                .advertis_post advertisement № 1
+                .advertis_post advertisement № 2
+                .advertis_post advertisement № 3
+
+        .greeting__container.column
+            .app__promo
+                p.app__promo_text Welcome in our app ChickenGramm!
+                p.app__promo_text join our community!
+                .app__promo_image
+            .app__entering
+                p.app__entering_text Greeting, user in our new app! If you already registred in our app: 
+                button.colored_button.greeting__entering_login#greeting_login Log In
+                hr.break_line
+                p.app__entering_text If you not regisred yet: 
+                button.colored_button.greeting__entering_logup#greeting_logup Log Up
+                hr.break_line
+
+        include ./components/entering-dialog-form.pug
+
+        footer.footer__chicken
+            p.footer__lable Produced by 
+                span.colored Someone...
+
+            li.feed__members_one.not_display
+                a.member_link(href="#")
+                p.link.member_name
+                p.link.member_status
+                .member_delete delete
+            hr
+            input#input_example.not_display(type="text", placeholder="", required)
+            textarea.not_display#textarea_example(name="", cols="30", rows="10")
+            section.feed__post.not_display
+                        .feed__post_header
+                            p.feed__post_name Hello World
+                            a(href="#").feed__post_user John Smith
+                            .feed__post_panel
+                                .feed__post_coment
+                                .feed__post_hide
+                                .feed__post_edit.feed_input
+                                .feed__post_delete
+                            .feed__coment_container.not_display
+                                form.feed__coment_form(name="feed-coment", enctype="multipart/form-data")
+                                    textarea.feed__coment_testarea(name="", cols="30", rows="10")
+                                    input.colored_button.feed__form_coment(type="submit", value="comment")
+                        .feed__post_info
+                            img.feed__post_image(src="", alt="post image")
+                            .feed__post_description 
+                        .feep__post_chat
+
+            .coment__container.not_display
+                a.coment__container_link(href="#")
+                p.coment__container_text
+
+        script(type="module", src="./index.js")

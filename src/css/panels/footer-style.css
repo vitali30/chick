@@ -1,0 +1,20 @@
+.footer__chicken{
+    height: 75px;
+    background: linear-gradient(90deg, rgba(255,247,76,1) 0%, rgba(253,149,29,1) 50%, rgba(252,241,69,1) 100%);
+    border: 1px solid grey;
+    flex: 0 0 auto;
+}
+.footer__lable{
+    line-height: 75px;
+    text-align: right;
+    padding-right: 10%;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 25px;
+    color: rgb(104, 104, 104);
+}
+@media screen and (max-width: 500px) {
+    .footer__lable{
+        font-size: 6vw;
+    }
+    
+}

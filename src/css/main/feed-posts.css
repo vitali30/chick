@@ -1,0 +1,173 @@
+.content_feed{
+    padding: 5px;
+    width: 50%;
+    margin: 5px;
+    position: relative;
+}
+.feed__post{
+    padding: 5px;
+}
+.feed__post_image{
+    max-width: 300px;
+    max-height: 300px;
+    float: left;
+    margin: 10px;
+}
+.feed__post_description{
+    font-size: 15px;
+    text-align: justify;
+    width: calc(100% - 300px);
+    padding: 15px;
+    max-height: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.feed__post_header{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+}
+.feed__post_name{
+    font-size: 2vw;
+    margin: 10px;
+    text-decoration: underline;
+    max-width: 35%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.feed__post_panel{
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+.feed__post_hide{
+    width: 32px;
+    height: 32px;
+    background-image: url(./img/hide.png);
+    background-size: 32px;
+    background-position: center;
+    margin: 0 10px;
+    opacity: 0.5;
+}
+.feed__post_hide:hover{
+    opacity: 1;
+}
+.feed__post_edit{
+    width: 32px;
+    height: 32px;
+    background-image: url(./img/edit.png);
+    background-size: 32px;
+    background-position: center;
+    margin: 0 10px;
+    opacity: 0.5;
+}
+.feed__post_edit:hover{
+    opacity: 1;
+}
+.feed__post_delete{
+    width: 32px;
+    height: 32px;
+    background-image: url(./img/delete.png);
+    background-size: 32px;
+    background-position: center;
+    margin: 0 10px;
+    opacity: 0.5;
+}
+.feed__post_delete:hover{
+    opacity: 1;
+}
+.feed__post_coment{
+    width: 32px;
+    height: 32px;
+    background-image: url(./img/coment.png);
+    background-size: 32px;
+    background-position: center;
+    margin: 0 10px;
+    opacity: 0.5;
+}
+.feed__post_coment:hover{
+    opacity: 1;
+}
+.feed__coment_container{
+    width: 350px;
+    height: 150px;
+    background-color: red;
+    position: absolute;
+    right: -75px;
+    top: 60px;
+}
+.feed__coment_testarea{
+    width: 100%;
+    height: 100%;
+}
+.feed__form_coment{
+    margin-top: 0!important;
+}
+
+.feed__form{
+    overflow: hidden;
+}
+.form__point_textarea{
+    width: 95%;
+    border: 2px solid rgb(105, 105, 105);
+    border-radius: 5px;
+    background-color: rgb(245, 240, 192);
+    padding-left: 15px;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 16px;
+    
+    line-height: 30px;
+}
+
+.feed_button{
+    margin-bottom: 25px!important;
+}
+
+.feed__post_user{
+    font-size: 2vw;
+    margin: 10px;
+    text-decoration: underline;
+    max-width: 35%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.feed__post_info{
+    display: flex;
+}
+#input_example{
+    height: 60%;
+    font-size: 1vw;
+}
+#textarea_example{
+    width: 100%;
+    height: 100%;
+}
+.full_body{
+    max-height: fit-content!important;
+}
+.full_name{
+    white-space: inherit!important;
+    text-align: center!important;
+}
+.full_button{
+    opacity: 0.2!important;
+}
+.coment__container{
+    display: flex;
+    margin: 25px;
+}
+
+.coment__container_link{
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: 40px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.coment__container_text{
+    line-height: 40px;
+}

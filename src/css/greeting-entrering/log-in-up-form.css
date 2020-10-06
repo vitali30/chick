@@ -1,0 +1,94 @@
+.entering_dialog{
+    width: 30%;
+    height: 50%;
+    margin: auto;
+    top: 20%;
+    border-radius: 25px;
+    animation: all 1s linear;
+    padding: 3% 0;
+    transition: opacity 0.5s linear;
+}
+.entering__form_title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.entering_input{
+    display: block;
+    width: 90%;
+    margin: 0 auto 5px;
+    padding: 10px
+}
+.info_text{
+    height: 24px;
+    text-align: center;
+}
+.entering_submit{
+    width: 25%;
+    margin: 20px auto;
+    display: block;
+}
+.entering_switch{
+    text-align: center;
+}
+.hiden{
+    opacity: 0;
+}
+.entering__form{
+    transition: opacity 1s linear;
+}
+.animation_before{
+    z-index: 2;
+    animation-name: animationPositionLeft;
+    animation-duration: 0.5s;
+    animation-timing-function: linear; 
+}
+
+@keyframes animationPositionLeft {
+    0% {
+        transform: translateX(-50vw);
+    }
+    50% {
+        transform: translateX(-25vw);
+    }   
+    100% {
+        transform: translateX(0vw);
+    }            
+}
+.animation_after{
+    animation-name: animationPositionRight;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    opacity: 0;
+    z-index: 0;
+    
+}
+@keyframes animationPositionRight{
+    0% {
+        transform: translateX(0vw);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(25vw);
+        opacity: 1;
+    }
+    99%{
+        transform: translateX(50vw);
+        opacity: 0;
+        z-index: 1;
+    }
+    100% {
+       transform: translateX(50vw);
+       opacity: 0;
+       z-index: 0;
+    }
+}
+
+.entering_dialog{
+    overflow: hidden;
+}
+.entering__form{
+    position: absolute;
+    width: 100%;
+}
+
+

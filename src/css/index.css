@@ -1,0 +1,19 @@
+/* Styles of header and footer */
+@import './panels/header-style.css';
+@import './panels/footer-style.css';
+
+/* Comon styles */
+@import './main/feed-posts.css';
+@import './main/common-elements.css';
+@import './main/advert-aside.css';
+@import './main/navigation.css';
+@import './main/members.css';
+
+/*  Styles of forms witch user use in app*/
+@import './user-using-forms/sending-post-form.css';
+@import './user-using-forms/settings-form.css';
+@import './user-using-forms/user-about.css';
+
+/* Styles of starting page and login/logup forms*/
+@import './greeting-entrering/greeting-container.css';
+@import './greeting-entrering/log-in-up-form.css';

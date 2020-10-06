@@ -1,0 +1,17 @@
+.navigation{
+    height: 30px;
+    margin: 5px auto 0;
+}
+.navigation__menu{
+    display: flex;
+    list-style: none;
+    width: fit-content;
+    margin: auto
+}
+.navigation__menu_point{
+    margin: 0 5px;
+    width: 100px;
+    text-align: center;
+    background-color: silver;
+    cursor: pointer;
+}

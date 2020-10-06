@@ -1,0 +1,46 @@
+block content
+    dialog.entering_dialog
+        form.entering__form.login__container.animation_before
+            p.entering__form_title Log In the App
+            .close.login__dialog_close#close__login
+            .form__point.login__name
+                input.form__point_field.login__name(type="email", placeholder="Enter login", name="login", required)
+                p.info_text.login__name_text
+            .form__point.login__psw
+                input.form__point_field.login__psw(type="password", placeholder="Enter Password", name="psw", required)
+                p.info_text.login__psw_text
+            input.colored_button.entering_submit(type="submit", value="Log In")
+            hr.break_line
+            .entering_switch
+                p Don't have an account yet?
+                    a.link#swith_to_logup(href="#") Log Up.
+        form.entering__form.logup__container.animation_after
+            p.entering__form_title Log Up in the App
+            .close.logup__dialog_close#close__logup
+            .form__point.logup__name
+                input.form__point_field.login__name(type="email", placeholder="Enter your new login", name="login", required)
+                p.info_text.login__name_text
+            .form__point.logup__psw_first
+                input.form__point_field.login__psw(type="password",  placeholder="Enter your app password", name="psw", required)
+                p.info_text.login__psw_text
+            .form__point.logup__psw_second
+                input.form__point_field.login__psw(type="password", placeholder="Enter your password again", name="psw", required)
+                p.info_text.login__psw_text
+            input.colored_button.entering_submit(type="submit", value="Log Up")
+            hr.break_line
+            .entering_switch
+                p Already have an account?
+                    a.link#swith_to_login(href="#")
+        form.entering__form.settings.animation_after
+            p.entering__form_title Text your comon data
+            .close.settings_close#close__settings
+            .form__point
+                input.form__point_field_half#entering__name_first(type="text", required, placeholder="First name")
+                input.form__point_field_half#entering__name_last(type="text", required, placeholder="Last name")
+            .form__point
+                textarea.form__point_field.entering_status(type="text", rows="4", placeholder="Your status")
+            input.colored_button.entering__form_submit(type="submit", value="Registered")
+            hr.break_line
+            .entering_switch
+                p You want to go back?
+                    a.link#swith_setting_logup(href="#") Back.

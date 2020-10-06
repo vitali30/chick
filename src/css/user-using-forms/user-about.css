@@ -1,0 +1,29 @@
+.content_user{
+    width: 25%;
+    padding: 5px;
+    margin: 5px;
+}
+.user__container{
+    display: flex;
+    max-height: 120px;
+}
+.user__container_photo{
+    border-radius: 50%;
+    border: 2px solid red;
+    margin: 10px;
+}
+.user__status{
+    max-height: 100px;
+    color: rgb(34, 33, 33);
+    font-size: 15px;
+    text-align: justify;
+    padding: 10px 0 0 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.user__container_name{
+    font-size: 20px;
+    text-decoration: underline;
+}

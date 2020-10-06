@@ -1,0 +1,68 @@
+.greeting__container{
+    max-width: 1800px;
+    width: 90%;
+    margin: 5px auto;
+    height: 100%;
+    min-height: 600px;
+}
+.app__promo{
+    float: left;
+    width: 55%;
+    height: 80%;
+    background-color: #fff;
+    margin: 50px 0 0 5%;
+    border-radius: 5px;
+    min-height: 510px;
+}
+.app__entering{
+    background-color: white;
+    border-radius: 5px;
+    width: 30%;
+    float: left;
+    margin: 50px 5% 0 5%;
+}
+.app__entering_text{
+    margin: 30px 0;
+    text-align: center;
+}
+.app__entering_login, .app__entering_logup{
+    margin-bottom: 50px;
+}
+.app__promo_text{
+    font-size: 30px;
+    margin: 50px 0;
+    text-align: center;
+}
+.app__promo_image{
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    margin-top: 30px;
+    background-image: url(./img/chicken-head-clipart-md.png);
+    background-size: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.not_display{
+    display: none;
+}
+@media screen and (max-width: 500px) {
+    .app__promo{
+        float: none;
+        width: 90%;
+        height: 50%;
+        margin: 20px 0 0 5%;
+    }
+    .app__entering{
+        width: 90%;
+        margin: 20px 5% 0 5%;
+    }
+    .greeting__container{
+        min-height: 100%;
+    }
+    .app__promo_image{
+        width: 60vw!important;
+        height: 60vw!important;
+        background-size: 60vw!important;
+    }
+}

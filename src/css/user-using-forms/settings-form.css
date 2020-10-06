@@ -1,0 +1,85 @@
+.settings_title{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.close_settings{
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+    cursor: pointer;
+    position: sticky;
+    left: 90%;
+}
+.close_settings:hover {
+    opacity: 1;
+}
+.close_settings:before, .close_settings:after {
+    position: absolute;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+    margin-left: 14px;
+}
+.close_settings:before {
+    transform: rotate(45deg);
+}
+.close_settings:after {
+    transform: rotate(-45deg);
+}
+
+.form__point{
+  width: 90%;
+  position: relative;
+  padding: 10px 0;
+  border-bottom: 2px solid #909090;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.setting__priority_lable{
+    color: rgb(105, 105, 105);
+    margin: 0 15px;
+}
+.settings__priority_field{
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+.settings__button{
+
+}
+
+.settings__dialog{
+    position: absolute;
+    top: 25%;
+    width: 50%;
+    z-index: 100;
+    margin: auto;
+    height: 50%;
+}
+.setting__image > input{
+    max-height: 40px;
+    padding: 10px 0 10px 40px;
+}
+.settings__anim_before{
+   
+    height: 0px;
+}
+.settings__anim_after{
+    height: 600px
+}
+
+
+
+.settings_field{
+    overflow: hidden;
+  
+}
+.settings__container{
+   transition: height 1s ease-in-out;
+ 
+ 
+}

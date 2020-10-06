@@ -1,0 +1,12 @@
+block content
+    form.settings__container.feed__form.settings__anim_before(name="feed", enctype="multipart/form-data")
+        .close_settings.feed__form_close
+        .form__point.feed__form_name
+            input.form__point_field#feed_heading(type="text", placeholder="Heading of feed post", required)
+        .form__point.feed__form_text
+            textarea.form__point_textarea#feed_text(type="text", placeholder="text of your feed post", rows="10", required)
+        .form__point.feed__form_image
+            input#feed_img.form__point_field(type="file", name="file")
+        input.colored_button.feed__form_reset(type="reset", value="reset")
+        input.colored_button.feed__form_submit(type="submit", value="send new post")
+    button.colored_button.feed_button Add feed post

@@ -1,0 +1,31 @@
+block content
+    .settings_field
+        form.settings__container.settings__anim_before(name="settings", enctype="multipart/form-data")
+            .close_settings
+            .form__point.settings_name
+                input#name_first.form__point_field_half(type="text", placeholder="First name")
+                input#name_last.form__point_field_half(type="text", placeholder="Last name")
+            .form__point.settings_psw
+                input#psw.form__point_field(type="password", required, placeholder="new password")
+            .form__point.settings_status
+                input#status.form__point_field(type="text", placeholder="TEXT YOUR NEW STATUS" rows="4")
+            .form__point.setting__image
+                input#photo.form__point_field(type="file", name="file")
+            .form__point.setting__date
+                lable.setting__priority_lable(for="bday") Введите дату вашего рождения:
+                input#bday.form__point_field(type="date", name="bday")
+            .form__point.settings_priority
+                lable.setting__priority_lable(for="priority") I DON`T WANT SHOW MY ACCOUNT
+                input#priority.settings__priority_field(type="checkbox")
+            .form__point.settings_gender
+                lable.setting__priority_lable(for="gender") Set your gender
+                p
+                    lable
+                        input(type="radio", name="gender", value="male", checked)
+                        | Male
+                    lable
+                        input(type="radio", name="gender", value="female", checked)
+                        | Female
+            input.colored_button.settings__button_reset(type="reset", value="reset")
+            input.colored_button.settings__button_end(type="submit", value="set new settings")
+    button.colored_button.settings_button Change User Settings

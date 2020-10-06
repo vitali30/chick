@@ -1,0 +1,11 @@
+.content_advertis{
+    padding: 5px;
+    width: 25%;
+    margin: 5px;
+}
+.advertis_post{
+    margin: 5px;
+    height: 120px;
+    background: linear-gradient(90deg, rgba(255,247,76,1) 0%, rgba(253,149,29,1) 50%, rgba(252,241,69,1) 100%);
+    border-radius: 10px;
+}
